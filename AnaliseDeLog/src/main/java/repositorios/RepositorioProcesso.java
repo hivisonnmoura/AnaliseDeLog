@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package repositorios;
 
 import java.util.ArrayList;
@@ -72,4 +72,4 @@ public class RepositorioProcesso implements RepositorioGenerico<EntidadeProcesso
 	}
 
 }
->>>>>>> 73611c3e2452fd5943cbbf261786f6243c0097b8
+

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package servicos;
 
 import java.io.File;
@@ -232,4 +232,4 @@ public class ServicoDescompactador {
 		return outputFile;
 	}
 }
->>>>>>> 73611c3e2452fd5943cbbf261786f6243c0097b8
+
