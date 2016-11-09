@@ -13,13 +13,14 @@ import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 
 import servicos.ServicoDescompactador;
+import servicos.ServicoFachada;
 
 import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 public class FrmDiretorio extends JFrame {
-
+	ServicoFachada servicoFachada = new ServicoFachada();
 	/**
 	 * 
 	 */
@@ -98,9 +99,19 @@ public class FrmDiretorio extends JFrame {
 						}
 
 					}
+<<<<<<< HEAD:AnaliseDeLog/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java
 					ServicoDescompactador aux = new ServicoDescompactador();
 					aux.extrairLogs(caminho, ListaArquivo);
 
+=======
+					
+					 servicoFachada.solicitarServicoDescompactador(caminho, ListaArquivo);
+					
+					
+					
+			
+					 // MetodoDescompactar(arquivo.getAbsolutePath(),ListaArquivo);
+>>>>>>> 292c26661d5de45fcd5a6b6e1b1754a76e2d563e:AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java
 				}
 			}
 		});
