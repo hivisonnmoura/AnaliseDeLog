@@ -4,6 +4,7 @@ package servicos;
 import java.io.File;
 import java.util.List;
 
+import entidades.EntidadeNo;
 import utilidades.ProcessaDadosDoNo;
 
 public class ServicoFachada {
@@ -19,7 +20,7 @@ public class ServicoFachada {
 	
 	public File solicitarServicoDescompactador(String caminho, List<String> ListaArquivo ){
 		File file = servicoDescompactador.extrairLogs(caminho, ListaArquivo);
-		System.out.println(file.getAbsolutePath());
+
 		solicitarProcessaDadosDoNo(file);
 		return file;
 	}
@@ -28,6 +29,11 @@ public class ServicoFachada {
 	public void solicitarProcessaDadosDoNo(File caminhoTemp ){
 		processaDadosDoNo.processaDiretorio(caminhoTemp);
 		//pegar retorno para criar objeto
+	}
+
+	public static List<EntidadeNo> getNodos() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
 
