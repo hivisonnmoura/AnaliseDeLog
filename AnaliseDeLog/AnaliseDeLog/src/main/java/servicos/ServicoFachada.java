@@ -57,6 +57,7 @@ public class ServicoFachada {
 		List<EntidadeNo> listanodos = new ArrayList<EntidadeNo>();
 		
 		listanodos.add(no1);
+		listanodos.add(no2);
 		listanodos.add(no3);
 		
 		return listanodos;
