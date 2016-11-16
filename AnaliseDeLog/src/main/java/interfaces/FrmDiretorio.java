@@ -13,7 +13,6 @@ import servicos.ServicoFachada;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.util.concurrent.Exchanger;
 
 public class FrmDiretorio extends JFrame {
 
@@ -101,6 +100,8 @@ public class FrmDiretorio extends JFrame {
 				String caminho = txtInserirDiretrio.getText();
 				File arquivo = new File(caminho);
                     try {
+						if(arquivo.listFiles().length == 0)
+							throw new NullPointerException();
                         for (File f : arquivo.listFiles()) {
 							if (f.isFile()) {
 									if (f.getName().endsWith(".tar.gz")) {
@@ -115,7 +116,7 @@ public class FrmDiretorio extends JFrame {
                         FrmNodos formDois = new FrmNodos();
                         formDois.setVisible(true);
                         setVisible(false);
-                    }catch (Exception nullPointer){
+                    }catch (NullPointerException nullPointer){
                        String erroAoSelecionarDiretorio = "Diretório inválido";
                         JOptionPane.showMessageDialog(null,erroAoSelecionarDiretorio,"Erro ao localizar diretório",JOptionPane.ERROR_MESSAGE);
                         btnLocalizar.doClick();
