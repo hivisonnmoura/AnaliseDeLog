@@ -9,7 +9,6 @@ import java.util.List;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
 
-
 import servicos.ServicoFachada;
 
 import java.awt.event.ActionListener;
@@ -23,6 +22,7 @@ public class FrmDiretorio extends JFrame {
 
 
 	public static void main(String[] args){
+
 
 
 		EventQueue.invokeLater(new Runnable() {
@@ -64,19 +64,7 @@ public class FrmDiretorio extends JFrame {
 		txtInserirDiretrio.setBounds(6, 17, 285, 20);
 		panel.add(txtInserirDiretrio);
 		txtInserirDiretrio.setColumns(10);
-/*
-        JTextArea textArea = new JTextArea(24, 80);
-        textArea.setBackground(Color.BLACK);
-        textArea.setForeground(Color.LIGHT_GRAY);
-        textArea.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 12));
-        System.setOut(new PrintStream(new OutputStream() {
-            @Override
-            public void write(int b) throws IOException {
-                textArea.append(String.valueOf((char) b));
-            }
-        }));
-            panel.add(textArea);
-            textArea.setVisible(true);*/
+
 
 
 
@@ -113,14 +101,13 @@ public class FrmDiretorio extends JFrame {
 				File arquivo = new File(caminho);
                     try {
                         for (File f : arquivo.listFiles()) {
-                            if (f.isFile()) {
-
-                                if (f.getName().endsWith(".tar.gz")) {
-
-                                    ListaArquivo.add(f.getName().toString());
-                                }
-                            }
-
+							if (f.isFile()) {
+									if (f.getName().endsWith(".tar.gz")) {
+										ListaArquivo.add(f.getName().toString());
+									}else{
+										throw new NullPointerException();
+									}
+						}
                         }
                         ServicoFachada servicoFachada = new ServicoFachada();
                         servicoFachada.solicitarServicoDescompactador(caminho, ListaArquivo);
@@ -128,7 +115,7 @@ public class FrmDiretorio extends JFrame {
                         formDois.setVisible(true);
                         setVisible(false);
                     }catch (NullPointerException nullPointer){
-                        String erroAoSelecionarDiretorio = "Diretório inválido";
+                       String erroAoSelecionarDiretorio = "Diretório inválido";
                         JOptionPane.showMessageDialog(null,erroAoSelecionarDiretorio,"Erro ao localizar diretório",JOptionPane.ERROR_MESSAGE);
                         btnLocalizar.doClick();
                     }

@@ -82,7 +82,7 @@ public class FrmStack extends JFrame {
 		contentPane.setLayout(null);
 
 		JLabel lblSelecioneAThread = new JLabel("Selecione a Thread desejada: ");
-		lblSelecioneAThread.setBounds(((int) ((largura / 2) - 170)), (int) (altura * 0.05), 256, 14);
+		lblSelecioneAThread.setBounds((largura / 2) - 170, (int) (altura * 0.05), 256, 14);
 		contentPane.add(lblSelecioneAThread);
 
 		setLocationRelativeTo(null);
@@ -137,7 +137,7 @@ public class FrmStack extends JFrame {
 				}
 			}
 		});
-		comboBox.setBounds(((int) ((largura / 2) - 170)), (int) (altura * 0.08), 170, 20);
+		comboBox.setBounds((largura / 2) - 170, (int) (altura * 0.08), 170, 20);
 		contentPane.add(comboBox);
 
 		JPanel panel = new JPanel();
@@ -186,7 +186,7 @@ public class FrmStack extends JFrame {
 
 			}
 		});
-		btnNewButton.setBounds(((int) (largura / 2) - 89 / 2), (int) (altura * 0.92), 89, 23);
+		btnNewButton.setBounds((largura / 2 - 89 / 2), (int) (altura * 0.92), 89, 23);
 		contentPane.add(btnNewButton);
 
 		JButton btnNewButton_1 = new JButton("Fechar");
@@ -199,7 +199,7 @@ public class FrmStack extends JFrame {
 		contentPane.add(btnNewButton_1);
 
 		JLabel lblProcessoLwpid = new JLabel("Processo - LWPID");
-		lblProcessoLwpid.setBounds((int) ((largura / 2) - 300), (int) (altura * 0.08), 170, 20);
+		lblProcessoLwpid.setBounds((largura / 2) - 300, (int) (altura * 0.08), 170, 20);
 		contentPane.add(lblProcessoLwpid);
 	}
 }
