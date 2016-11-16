@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.border.EmptyBorder;
@@ -53,8 +54,8 @@ public class FrmDiretorio extends JFrame {
 
 		JPanel panel = new JPanel();
 		panel.setBorder(
-				new TitledBorder(null, "Selecionar o Diretorio", TitledBorder.LEADING, TitledBorder.TOP, null, null));
-		panel.setBounds(10, 90, 408, 47);
+				new TitledBorder(null, "Selecionar o Diretorio com os .tar.gz", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		panel.setBounds(10, 42, 408, 47);
 		contentPane.add(panel);
 		panel.setLayout(null);
 
@@ -89,9 +90,20 @@ public class FrmDiretorio extends JFrame {
 		});
 		btnLocalizar.setBounds(301, 16, 97, 23);
 		panel.add(btnLocalizar);
+
+		JTextArea textArea = new JTextArea();
+		textArea.setBounds(10, 115, 408, 132);
+		contentPane.add(textArea);
+		textArea.setFont(new Font("Monospaced", Font.PLAIN, 10));
+		textArea.setLayout(new BorderLayout());
+		textArea.setEditable(false);
+		PrintStream printStream = new PrintStream(new CustomOutputStream(textArea));
+		System.setOut(printStream);
+		System.setErr(printStream);
+		textArea.setVisible(false);
 		
 		JButton btnDescompactar = new JButton("Descompactar");
-		btnDescompactar.setBounds(135, 231, 150, 23);
+		btnDescompactar.setBounds(137, 266, 150, 23);
 		contentPane.add(btnDescompactar);
 		btnDescompactar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

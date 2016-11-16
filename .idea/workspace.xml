@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35b727fa-0ac1-47c4-9ecb-9ac9d88d72e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmDiretorio.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmDiretorio.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/CustomOutputStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmDiretorio$1.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmDiretorio$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmDiretorio$2.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmDiretorio$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java" afterPath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java" />
     </list>
@@ -29,25 +31,25 @@
       <file leaf-file-name="FrmDiretorio.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1163">
-              <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+            <state relative-caret-position="840">
+              <caret line="56" column="76" selection-start-line="56" selection-start-column="76" selection-end-line="56" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2455#2463#0" expanded="true" />
+                <element signature="e#2911#2919#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RepositorioThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/repositorios/RepositorioThread.java">
+      <file leaf-file-name="CustomOutputStream.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/CustomOutputStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#323#324#0" expanded="false" />
-                <element signature="e#351#352#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -199,6 +201,7 @@
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java" />
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoDescompactador.java" />
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/Console.java" />
+        <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/jsfgdjb.java" />
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java" />
       </list>
     </option>
@@ -417,7 +420,7 @@
     <configuration default="false" name="FrmDiretorio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="interfaces.*" />
+          <option name="PATTERN" value="interfaces.CustomOutputStream" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -880,7 +883,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479314854078</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Correcao validador de diretorio">
+      <created>1479318462369</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1479318462369</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -936,7 +946,8 @@
     <MESSAGE value="Validador do seleciona processo e correcao da tela FrmStack" />
     <MESSAGE value="Correcao bug nao da erro" />
     <MESSAGE value="Correcao bug nao da erro NullPointer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correcao bug nao da erro NullPointer" />
+    <MESSAGE value="Correcao validador de diretorio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correcao validador de diretorio" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -949,17 +960,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2455#2463#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoDescompactador.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1316,13 +1316,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java">
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/CustomOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1163">
-          <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2455#2463#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="76" selection-start-line="56" selection-start-column="76" selection-end-line="56" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2911#2919#0" expanded="true" />
           </folding>
         </state>
       </provider>
