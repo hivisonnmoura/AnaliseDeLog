@@ -17,12 +17,13 @@ public class OVNoProcesso {
 	private int nlwp;
 	private String process;
 	private String horaDoProcesso;
+	private String diretorio;
 
 	private OVNoProcesso() {
 	}
 
 	private OVNoProcesso(String nome, String data, int pid2, String username2, String time2, String cpu2, int nlwp2,
-			String process2, String hora) {
+			String process2, String hora, String diretorio) {
 		this.nomeDoNo = nome;
 		this.dataDoNo = data;
 		this.pid = pid2;
@@ -32,19 +33,22 @@ public class OVNoProcesso {
 		this.nlwp = nlwp2;
 		this.process = process2;
 		this.horaDoProcesso = hora;
+		this.diretorio = diretorio;
 
 	}
 
 	public static List<OVNoProcesso> criarCom(List<EntidadeNo> no) {
 		List<OVNoProcesso> listaDeRetorno = new ArrayList<OVNoProcesso>();
 		for (EntidadeNo entidadeNo : no) {
-			ArrayList<EntidadeProcesso> processos = entidadeNo.getProcessos();
+			List<EntidadeProcesso> processos = entidadeNo.getProcessos();
 			for (EntidadeProcesso entidadeProcesso : processos) {
 				OVNoProcesso ovnoprocesso = new OVNoProcesso(entidadeNo.getNome(), entidadeNo.getData(),
 						entidadeProcesso.getPid(), entidadeProcesso.getUsername(), entidadeProcesso.getTime(),
 						entidadeProcesso.getCpu(), entidadeProcesso.getNlwp(), entidadeProcesso.getProcess(),
-						entidadeProcesso.getHora());
+						entidadeProcesso.getHora(), entidadeProcesso.getDiretorio());
+				if(!listaDeRetorno.contains(ovnoprocesso))
 				listaDeRetorno.add(ovnoprocesso);
+
 			}
 		}
 
@@ -58,6 +62,14 @@ public class OVNoProcesso {
 
 	public void setNomeDoNo(String nomeDoNo) {
 		this.nomeDoNo = nomeDoNo;
+	}
+
+	public String getDiretorio() {
+		return diretorio;
+	}
+
+	public void setDiretorio(String diretorio) {
+		this.diretorio = diretorio;
 	}
 
 	public String getDataDoNo() {

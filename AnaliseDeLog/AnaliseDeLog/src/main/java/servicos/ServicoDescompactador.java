@@ -15,7 +15,7 @@ import org.apache.commons.compress.archivers.ArchiveStreamFactory;
 import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
 import org.apache.commons.compress.archivers.tar.TarArchiveInputStream;
 
-public class ServicoDescompactador {
+class ServicoDescompactador {
 
 	public File extrairLogs(String caminho, List<String> arquivos){
 		File localDestino = null;
@@ -58,7 +58,7 @@ public class ServicoDescompactador {
 		File arquivoTar = unGzip(arquivoTarGz, localDestino);
 		unTar(arquivoTar, localDestino);
 		if (arquivoTar.delete()) {
-			System.err.println("Could not delete file: " + arquivoTar);
+			System.err.println("Caminho do temp: " + arquivoTar);
 		}
 	}
 

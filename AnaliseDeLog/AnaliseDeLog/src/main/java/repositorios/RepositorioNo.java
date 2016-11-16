@@ -5,7 +5,8 @@ import java.util.ArrayList;
 import entidades.EntidadeNo;
 
 public class RepositorioNo implements RepositorioGenerico<EntidadeNo> {
-	ArrayList<EntidadeNo> nos = new ArrayList<EntidadeNo>();
+	
+	private static ArrayList<EntidadeNo> nos = new ArrayList<EntidadeNo>();
 
 	public ArrayList<EntidadeNo> select(EntidadeNo no) {
 		return select(no);
@@ -21,17 +22,17 @@ public class RepositorioNo implements RepositorioGenerico<EntidadeNo> {
 	}
 
 	public void insert(EntidadeNo no) {
-		this.nos.add(no);
+		nos.add(no);
+
 	}
 
 	public ArrayList<EntidadeNo> delete() {
-
+		nos.clear();
 		return null;
 	}
 
 	public ArrayList<EntidadeNo> findall() {
-
-		return null;
+		return nos;
 	}
 
 	public EntidadeNo find(EntidadeNo no) {

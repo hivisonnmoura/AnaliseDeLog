@@ -8,7 +8,7 @@ import fabricas.FabricaNo;
 import repositorios.RepositorioNo;
 
 public class ServicoNo {
-	
+
 	private RepositorioNo repositorioNo = new RepositorioNo(); 
 
 	public ServicoNo() {
@@ -19,11 +19,17 @@ public class ServicoNo {
 		EntidadeNo no = FabricaNo.nova().criarNo(nome, data, processos);
 		repositorioNo.insert(no);
 		return no;
-		
-		
 	}
 
 	public EntidadeNo solicitarselectByData(String data) {
 		return repositorioNo.selectByData(data);
 	}
+	
+	public ArrayList<EntidadeNo> buscarTodos(){
+
+		ArrayList<EntidadeNo> entidadeNo = repositorioNo.findall();
+		return entidadeNo;
+ 
+	}
+	
 }
