@@ -3,17 +3,13 @@ package interfaces;
 
 import java.awt.EventQueue;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
 import java.awt.Color;
 
 
 import javax.swing.border.TitledBorder;
-import javax.swing.JTable;
-import javax.swing.JButton;
 
 import objetodevalor.OVNoProcesso;
 
@@ -21,9 +17,6 @@ import servicos.ServicoFachada;
 import utilidades.ProcessaDadosCpuDetalhado;
 
 import javax.swing.border.LineBorder;
-
-import javax.swing.JTextField;
-import javax.swing.ListSelectionModel;
 
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -38,6 +31,7 @@ class FrmNodos extends JFrame {
 	private JTextField textField;
 	private JTextField textField_1;
 	private DadoTableModel tableModel;
+    private String caminhoDiretorio;
 
 	private ServicoFachada servicoFachada = new ServicoFachada();
 
@@ -134,17 +128,21 @@ class FrmNodos extends JFrame {
 		JButton btnPrximo = new JButton("Proximo");
 		btnPrximo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-
-				
-				
-				String caminhoDiretorio = tableNodosCriticos.getModel()
-						.getValueAt(tableNodosCriticos.getSelectedRow(), 9).toString();
-				String caminhoCpuDetalhado = servicoFachada.direcionaCPUProcess(caminhoDiretorio);
-				ProcessaDadosCpuDetalhado.processaCpuDetalhada(caminhoCpuDetalhado);
-				FrmStack frmStack = new FrmStack();
-				frmStack.setVisible(true);
-				setVisible(false);
-
+                try {
+                    caminhoDiretorio = tableNodosCriticos.getModel().getValueAt(tableNodosCriticos.getSelectedRow(), 9)
+                            .toString();
+                } catch (ArrayIndexOutOfBoundsException ex) {
+                    caminhoDiretorio = "";
+                }
+                if (caminhoDiretorio == "") {
+                    JOptionPane.showMessageDialog(null, "Selecione um processo!");
+                } else {
+                    String caminhoCpuDetalhado = servicoFachada.direcionaCPUProcess(caminhoDiretorio);
+                    ProcessaDadosCpuDetalhado.processaCpuDetalhada(caminhoCpuDetalhado);
+                    FrmStack frmStack = new FrmStack();
+                    frmStack.setVisible(true);
+                    setVisible(false);
+                }
 			}
 		});
 		btnPrximo.setBounds(500, 377, 89, 23);
@@ -163,7 +161,9 @@ class FrmNodos extends JFrame {
 		});
 		btnRetornar.setBounds(10, 377, 89, 23);
 		contentPane.add(btnRetornar);
-		
+        JLabel lblSelecioneOProcesso = new JLabel("Selecione o processo desejado para prosseguir");
+        lblSelecioneOProcesso.setBounds(170, 381, 297, 14);
+        contentPane.add(lblSelecioneOProcesso);
 
 	}
 }

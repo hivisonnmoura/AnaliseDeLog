@@ -2,6 +2,7 @@ package interfaces;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
@@ -27,6 +28,7 @@ import javax.swing.DefaultListCellRenderer;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.TextArea;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.ClipboardOwner;
@@ -36,14 +38,21 @@ import java.awt.event.KeyAdapter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 
-class FrmStack extends JFrame {
+public class FrmStack extends JFrame {
 
 	RepositorioThread repositorioThread = new RepositorioThread();
-	private JTextArea jTextArea = new JTextArea();
+	String stringStack;
+	JTextArea jTextArea = new JTextArea();
+	GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+	int largura = gd.getDisplayMode().getWidth()-70;
+	int altura = gd.getDisplayMode().getHeight()-70;
+	JScrollPane sp = new JScrollPane();
 
-	private ServicoFachada servicoFachada = new ServicoFachada();
+	private JPanel contentPane;
+	ServicoFachada servicoFachada = new ServicoFachada();
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -66,17 +75,14 @@ class FrmStack extends JFrame {
 
 		setTitle("Logz - An\u00E1lise de stacks");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
-		int largura = gd.getDisplayMode().getWidth();
-		int altura = gd.getDisplayMode().getHeight();
 		setBounds(100, 100, largura, altura);
 
-		JPanel contentPane = new JPanel();
+		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
-		JLabel lblSelecioneAThread = new JLabel("Selecione a Thread desejada:");
+		JLabel lblSelecioneAThread = new JLabel("Selecione a Thread desejada: ");
 		lblSelecioneAThread.setBounds(((int) ((largura / 2) - 170)), (int) (altura * 0.05), 256, 14);
 		contentPane.add(lblSelecioneAThread);
 
@@ -89,7 +95,7 @@ class FrmStack extends JFrame {
 
 			@Override
 			public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected,
-					boolean cellHasFocus) {
+														  boolean cellHasFocus) {
 				super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
 				if (value instanceof EntidadeThread) {
 					EntidadeThread entidadeThread = (EntidadeThread) value;
@@ -106,7 +112,6 @@ class FrmStack extends JFrame {
 
 				String stringStack = String.join("\n", servicoFachada.direcionaStack((EntidadeThread) comboBox.getSelectedItem()));
 				jTextArea.setText(stringStack);
-				jTextArea.setEditable(false);
 
 				if (stringStack.contains("soluziona")) {
 					String regexDelimitaLinhasComSoluzionaZeus = "\\t[\\s[0-9]*[a-zA-Z]*]*]*]*.soluziona[.[0-9]*[a-zA-Z]*[\\_\\(\\:\\s]*]*]*[\\)]";
@@ -115,6 +120,11 @@ class FrmStack extends JFrame {
 					while (matcher.find()) {
 						int inicio = matcher.start()+1;
 						int fim = matcher.end();
+						jTextArea.setSelectionStart(inicio);
+						jTextArea.setSelectionEnd(fim);
+
+
+
 						try {
 							Highlighter highlight = jTextArea.getHighlighter();
 							Highlighter.HighlightPainter painter = new DefaultHighlighter.DefaultHighlightPainter(
@@ -122,9 +132,10 @@ class FrmStack extends JFrame {
 							highlight.addHighlight(inicio, fim, painter);
 						} catch (BadLocationException bad) {
 							bad.printStackTrace();
+
 						}
 					}
-			}
+				}
 			}
 		});
 		comboBox.setBounds(((int) ((largura / 2) - 170)), (int) (altura * 0.08), 170, 20);
@@ -133,21 +144,21 @@ class FrmStack extends JFrame {
 		JPanel panel = new JPanel();
 		panel.setBorder(new TitledBorder(null, "Descricao da Stack da Thread escolhida", TitledBorder.LEADING,
 				TitledBorder.TOP, null, null));
-		panel.setBounds(4, 93, (int) (largura * 0.99), (int) (altura * 0.78));
+		panel.setBounds(12, 97, (int) (largura*0.975), (int) (altura * 0.781));
 
 		contentPane.add(panel);
+		panel.setLayout(null);
+
+		sp.setBounds(10,24,(int) (largura*0.96), (int) (altura * 0.729));
+		sp.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		sp.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+		panel.add(sp);
+		sp.setViewportView(jTextArea);
 
 		jTextArea.addKeyListener(new KeyAdapter() {
 
 		});
-		panel.setLayout(null);
 		jTextArea.setText("Descri\u00E7\u00E3o da Stack");
-
-		JScrollPane sp = new JScrollPane(jTextArea);
-		sp.setBounds(10, 21, (int) (largura * 0.98), (int) (altura * 0.74));
-		sp.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-		sp.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
-		panel.add(sp);
 
 		JButton btnRetornar = new JButton("Retornar");
 		btnRetornar.setBounds(((int) ((largura * 0.01))), (int) (altura * 0.92), 89, 23);
@@ -187,5 +198,9 @@ class FrmStack extends JFrame {
 		});
 		btnNewButton_1.setBounds(((int) (largura * 0.99 - 89)), (int) (altura * 0.92), 89, 23);
 		contentPane.add(btnNewButton_1);
+
+		JLabel lblProcessoLwpid = new JLabel("Processo - LWPID");
+		lblProcessoLwpid.setBounds((int) ((largura / 2) - 300), (int) (altura * 0.08), 170, 20);
+		contentPane.add(lblProcessoLwpid);
 	}
 }
