@@ -1,18 +1,17 @@
 package interfaces;
 
 import javax.swing.*;
-import java.awt.EventQueue;
+import java.awt.*;
 import java.io.File;
+
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
 
-import jdk.nashorn.internal.scripts.JO;
+
 import servicos.ServicoFachada;
 
-import java.awt.Color;
-import java.awt.Cursor;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -23,7 +22,9 @@ public class FrmDiretorio extends JFrame {
 	private JTextField txtInserirDiretrio;
 
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
+
+
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -35,7 +36,8 @@ public class FrmDiretorio extends JFrame {
 				}
 			}
 		});
-	}
+
+    }
 
 
 	public FrmDiretorio() {
@@ -56,11 +58,27 @@ public class FrmDiretorio extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 
+
 		txtInserirDiretrio = new JTextField();
 		txtInserirDiretrio.setForeground(Color.LIGHT_GRAY);
 		txtInserirDiretrio.setBounds(6, 17, 285, 20);
 		panel.add(txtInserirDiretrio);
 		txtInserirDiretrio.setColumns(10);
+/*
+        JTextArea textArea = new JTextArea(24, 80);
+        textArea.setBackground(Color.BLACK);
+        textArea.setForeground(Color.LIGHT_GRAY);
+        textArea.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 12));
+        System.setOut(new PrintStream(new OutputStream() {
+            @Override
+            public void write(int b) throws IOException {
+                textArea.append(String.valueOf((char) b));
+            }
+        }));
+            panel.add(textArea);
+            textArea.setVisible(true);*/
+
+
 
 		JButton btnLocalizar = new JButton("Localizar");
 		btnLocalizar.addActionListener(new ActionListener() {
@@ -115,9 +133,7 @@ public class FrmDiretorio extends JFrame {
                         btnLocalizar.doClick();
                     }
 			}});
-		setCursor(Cursor.getDefaultCursor());
-		btnLocalizar.setBounds(301, 16, 97, 23);
-		panel.add(btnLocalizar);
+
 	}
 	
 }

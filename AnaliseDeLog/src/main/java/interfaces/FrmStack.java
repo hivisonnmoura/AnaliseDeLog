@@ -51,7 +51,6 @@ public class FrmStack extends JFrame {
 	int altura = gd.getDisplayMode().getHeight()-70;
 	JScrollPane sp = new JScrollPane();
 
-	private JPanel contentPane;
 	ServicoFachada servicoFachada = new ServicoFachada();
 
 	public static void main(String[] args) {
@@ -77,7 +76,7 @@ public class FrmStack extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, largura, altura);
 
-		contentPane = new JPanel();
+		JPanel contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);

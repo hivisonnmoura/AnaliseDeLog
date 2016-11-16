@@ -58,7 +58,7 @@ class ServicoDescompactador {
 		File arquivoTar = unGzip(arquivoTarGz, localDestino);
 		unTar(arquivoTar, localDestino);
 		if (arquivoTar.delete()) {
-			System.err.println("Could not delete file: " + arquivoTar);
+			System.err.println("Caminho do temp: " + arquivoTar);
 		}
 	}
 
