@@ -112,6 +112,7 @@ class FrmNodos extends JFrame {
 
 		tableNodosCriticos = new JTable();
 		tableNodosCriticos.setColumnSelectionAllowed(true);
+        tableNodosCriticos.setAutoCreateRowSorter(true);
 		tableNodosCriticos.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
 		tableNodosCriticos.addMouseListener(new MouseAdapter() {
 			@Override

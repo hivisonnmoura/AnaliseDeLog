@@ -41,7 +41,6 @@ import javax.swing.JScrollPane;
 class FrmStack extends JFrame {
 
 	RepositorioThread repositorioThread = new RepositorioThread();
-	String stringStack;
 	private JTextArea jTextArea = new JTextArea();
 
 	private ServicoFachada servicoFachada = new ServicoFachada();
@@ -123,8 +122,8 @@ class FrmStack extends JFrame {
 							highlight.addHighlight(inicio, fim, painter);
 						} catch (BadLocationException bad) {
 							bad.printStackTrace();
-						}	
-				}
+						}
+					}
 			}
 			}
 		});

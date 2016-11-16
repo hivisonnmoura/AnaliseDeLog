@@ -1,17 +1,14 @@
 package interfaces;
 
-import javax.swing.JFileChooser;
+import javax.swing.*;
 import java.awt.EventQueue;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JButton;
-import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 
+import jdk.nashorn.internal.scripts.JO;
 import servicos.ServicoFachada;
 
 import java.awt.Color;
@@ -96,22 +93,27 @@ public class FrmDiretorio extends JFrame {
 				List<String> ListaArquivo = new ArrayList<String>();
 				String caminho = txtInserirDiretrio.getText();
 				File arquivo = new File(caminho);
+                    try {
+                        for (File f : arquivo.listFiles()) {
+                            if (f.isFile()) {
 
-				for (File f : arquivo.listFiles()) {
-					if (f.isFile()) {
+                                if (f.getName().endsWith(".tar.gz")) {
 
-						if (f.getName().endsWith(".tar.gz")) {
-							
-							ListaArquivo.add(f.getName().toString());
-						}
-					}
+                                    ListaArquivo.add(f.getName().toString());
+                                }
+                            }
 
-				}
-				ServicoFachada servicoFachada = new ServicoFachada();
-				servicoFachada.solicitarServicoDescompactador(caminho, ListaArquivo);
-				FrmNodos formDois = new FrmNodos();
-				formDois.setVisible(true);
-				setVisible(false);
+                        }
+                        ServicoFachada servicoFachada = new ServicoFachada();
+                        servicoFachada.solicitarServicoDescompactador(caminho, ListaArquivo);
+                        FrmNodos formDois = new FrmNodos();
+                        formDois.setVisible(true);
+                        setVisible(false);
+                    }catch (NullPointerException nullPointer){
+                        String erroAoSelecionarDiretorio = "Diretório inválido";
+                        JOptionPane.showMessageDialog(null,erroAoSelecionarDiretorio,"Erro ao localizar diretório",JOptionPane.ERROR_MESSAGE);
+                        btnLocalizar.doClick();
+                    }
 			}});
 
 		setCursor(Cursor.getDefaultCursor());
