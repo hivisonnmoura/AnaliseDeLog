@@ -13,6 +13,7 @@ import servicos.ServicoFachada;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.util.concurrent.Exchanger;
 
 public class FrmDiretorio extends JFrame {
 
@@ -114,7 +115,7 @@ public class FrmDiretorio extends JFrame {
                         FrmNodos formDois = new FrmNodos();
                         formDois.setVisible(true);
                         setVisible(false);
-                    }catch (NullPointerException nullPointer){
+                    }catch (Exception nullPointer){
                        String erroAoSelecionarDiretorio = "Diretório inválido";
                         JOptionPane.showMessageDialog(null,erroAoSelecionarDiretorio,"Erro ao localizar diretório",JOptionPane.ERROR_MESSAGE);
                         btnLocalizar.doClick();
