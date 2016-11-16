@@ -25,7 +25,7 @@ import java.awt.event.ActionEvent;
 
 import java.awt.event.MouseAdapter;
 
-class FrmNodos extends JFrame {
+public class FrmNodos extends JFrame {
 
 	private JTable tableNodosCriticos;
 	private JTextField textField;

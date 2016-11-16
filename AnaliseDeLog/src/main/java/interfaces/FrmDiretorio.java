@@ -125,9 +125,7 @@ public class FrmDiretorio extends JFrame {
                         }
                         ServicoFachada servicoFachada = new ServicoFachada();
                         servicoFachada.solicitarServicoDescompactador(caminho, ListaArquivo);
-                        FrmNodos formDois = new FrmNodos();
-                        formDois.setVisible(true);
-                        setVisible(false);
+
                     }catch (NullPointerException nullPointer){
                        String erroAoSelecionarDiretorio = "Diretório inválido";
                         JOptionPane.showMessageDialog(null,erroAoSelecionarDiretorio,"Erro ao localizar diretório",JOptionPane.ERROR_MESSAGE);

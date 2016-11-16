@@ -2,6 +2,9 @@ package servicos;
 
 import java.io.File;
 import java.util.List;
+
+import interfaces.FrmDiretorio;
+import interfaces.FrmNodos;
 import repositorios.RepositorioProcesso;
 import repositorios.RepositorioNo;
 import entidades.EntidadeNo;
@@ -10,6 +13,8 @@ import repositorios.RepositorioThread;
 import utilidades.ProcessaDadosDoNo;
 import utilidades.ProcessaStacksUtil;
 
+import javax.swing.*;
+
 public class ServicoFachada {
 
 	private ServicoDescompactador servicoDescompactador = new ServicoDescompactador();
@@ -17,16 +22,36 @@ public class ServicoFachada {
 	private RepositorioProcesso repositorioProcesso = new RepositorioProcesso();
 	private RepositorioNo repositorioNo = new RepositorioNo();
 	private RepositorioThread repositorioThread = new RepositorioThread();
-	
+	private ServicoValidadorDeNos servicoValidadorDeNos = new ServicoValidadorDeNos();
+
+
 
 
 
 
 	public File solicitarServicoDescompactador(String caminho, List<String> ListaArquivo) {
 		File file = servicoDescompactador.extrairLogs(caminho, ListaArquivo);
-		solicitarProcessaDadosDoNo(file);
-		solicitarProcessaDadosCpuDetalhado(file);
+		solicitarServicoValidadorDeNos(file);
+
 		return file;
+	}
+
+	public void solicitarServicoValidadorDeNos(File file){
+		servicoValidadorDeNos.listar(file);
+
+		if (ServicoValidadorDeNos.valido == true){
+			solicitarProcessaDadosDoNo(file);
+			solicitarProcessaDadosCpuDetalhado(file);
+			FrmDiretorio formUm = new FrmDiretorio();
+			FrmNodos formDois = new FrmNodos();
+			formDois.setVisible(true);
+			formUm.setVisible(false);
+		}
+		else{
+
+			JOptionPane.showMessageDialog(null,servicoValidadorDeNos.mensagemErro +"\n POR FAVOR, ESCOLHA OUTRO DIRETORIO", "ERRO: Arquivo invalido ou em branco", JOptionPane.ERROR_MESSAGE);
+		}
+
 	}
 
 	private void solicitarProcessaDadosDoNo(File caminhoTemp) {
