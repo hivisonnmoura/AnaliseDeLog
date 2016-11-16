@@ -1,14 +1,11 @@
 package utilidades;
 
 import java.io.File;
-import java.util.ArrayList;
-import entidades.EntidadeProcesso;
-import servicos.ServicoNo;
+
 
 public class ProcessaDadosDoNo {
 	private static ProcessaDadosCPU processaDadosCPU = new ProcessaDadosCPU();
-	static ArrayList<EntidadeProcesso> listaProcesso = new ArrayList<EntidadeProcesso>();
-	static ServicoNo servicoNo = new ServicoNo();
+
 
 	public String[] processaDiretorio(File file) {
 		String[] arquivos = file.list();

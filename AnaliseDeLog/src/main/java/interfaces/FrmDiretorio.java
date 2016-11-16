@@ -115,7 +115,6 @@ public class FrmDiretorio extends JFrame {
                         btnLocalizar.doClick();
                     }
 			}});
-
 		setCursor(Cursor.getDefaultCursor());
 		btnLocalizar.setBounds(301, 16, 97, 23);
 		panel.add(btnLocalizar);

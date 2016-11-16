@@ -32,7 +32,7 @@ public class ProcessaStacksUtil {
 
 		stringContatenaTexto = String.join("\n", listaAuxiliar);
 
-		String[] arrayDivideStackEmBlocos= stringContatenaTexto.split("\n\n");
+		String[] arrayDivideStackEmBlocos = stringContatenaTexto.split("\n\n");
 
 		listaDeStacks.addAll(Arrays.asList(arrayDivideStackEmBlocos).subList(1, arrayDivideStackEmBlocos.length - 1));
 

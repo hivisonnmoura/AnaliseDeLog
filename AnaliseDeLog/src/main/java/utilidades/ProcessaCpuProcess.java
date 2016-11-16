@@ -62,7 +62,7 @@ class ProcessaCpuProcess {
 	}
 
 	private static String tratarHora(String[] ajustaHoraComDivisao) {
-		String ajustaHora = new String();
+		String ajustaHora;
 		ajustaHora = ajustaHoraComDivisao[3];
 		ajustaHora = new StringBuffer(ajustaHora).insert(2, ":").delete(5,9).toString();
 		return ajustaHora;
