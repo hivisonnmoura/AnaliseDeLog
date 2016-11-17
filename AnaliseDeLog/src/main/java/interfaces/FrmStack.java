@@ -86,9 +86,31 @@ public class FrmStack extends JFrame {
             String stringStack1 = String.join("\n", servicoFachada.direcionaStack((EntidadeThread) comboBox.getSelectedItem()));
             jTextArea.setText(stringStack1);
 
+            if (stringStack1.contains("locked")) {
+                String regexDelimitaLinhasComWaiting = "\\-\\slocked[[\\s]*[0-9]*[a-zA-Z]*[\\_\\(\\:\\s\\<\\>\\.\\$]*]*[\\)]";
+                Pattern pattern = Pattern.compile(regexDelimitaLinhasComWaiting);
+                Matcher matcher = pattern.matcher(stringStack1);
+                while (matcher.find()) {
+                    int inicio = matcher.start();
+                    int fim = matcher.end();
+                    jTextArea.setSelectionStart(inicio);
+                    jTextArea.setSelectionEnd(fim);
+
+
+                    try {
+                        Highlighter highlight = jTextArea.getHighlighter();
+                        Highlighter.HighlightPainter painter = new DefaultHighlighter.DefaultHighlightPainter(
+                                Color.GREEN);
+                        highlight.addHighlight(inicio, fim, painter);
+                    } catch (BadLocationException bad) {
+                        bad.printStackTrace();
+
+                    }
+                }
+            }
+
             if (stringStack1.contains("waiting")) {
                 String regexDelimitaLinhasComWaiting = "\\-\\swaiting[[\\s]*[0-9]*[a-zA-Z]*[\\_\\(\\:\\s\\<\\>\\.\\$]*]*[\\)]";
-                //String regexDelimitaLinhasComWaiting = "waiting";
                 Pattern pattern = Pattern.compile(regexDelimitaLinhasComWaiting);
                 Matcher matcher = pattern.matcher(stringStack1);
                 while (matcher.find()) {
