@@ -22,10 +22,8 @@ import java.util.regex.Pattern;
 public class FrmStack extends JFrame {
 
     RepositorioThread repositorioThread = new RepositorioThread();
-    String stringStack;
+    //String stringStack;
     private JTextArea jTextArea = new JTextArea();
-
-
     private ServicoFachada servicoFachada = new ServicoFachada();
 
     public static void main(String[] args) {
@@ -44,7 +42,7 @@ public class FrmStack extends JFrame {
     }
 
     public FrmStack() {
-
+        jTextArea.setEditable(false);
         setTitle("Logz - An\u00E1lise de stacks");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();

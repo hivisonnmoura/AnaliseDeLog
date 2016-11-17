@@ -1,6 +1,7 @@
 package interfaces;
 
 import servicos.ServicoFachada;
+import servicos.ServicoValidadorDeNos;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -19,7 +20,6 @@ public class FrmDiretorio extends JFrame {
 
 
     public static void main(String[] args) {
-
 
         EventQueue.invokeLater(() -> {
             try {
@@ -80,7 +80,6 @@ public class FrmDiretorio extends JFrame {
 
         JTextArea textArea = new JTextArea();
         textArea.setText(null);
-        textArea.setEditable(false);
         textArea.setBounds(10, 115, 408, 132);
         contentPane.add(textArea);
         textArea.setFont(new Font("Monospaced", Font.PLAIN, 10));
@@ -111,8 +110,13 @@ public class FrmDiretorio extends JFrame {
                         }
                     }
                 }
+
+
+
                 ServicoFachada servicoFachada = new ServicoFachada();
                 servicoFachada.solicitarServicoDescompactador(caminho, ListaArquivo);
+                textArea.setText(null);
+                this.dispose();
 
             } catch (NullPointerException nullPointer) {
                 String erroAoSelecionarDiretorio = "Diretório inválido";

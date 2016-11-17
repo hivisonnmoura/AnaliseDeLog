@@ -41,9 +41,13 @@ public class ServicoFachada {
             FrmNodos formDois = new FrmNodos();
             formDois.setVisible(true);
             formUm.setVisible(false);
+
+
         } else {
 
             JOptionPane.showMessageDialog(null, servicoValidadorDeNos.mensagemErro + "\n POR FAVOR, ESCOLHA OUTRO DIRETORIO", "ERRO: Arquivo invalido ou em branco", JOptionPane.ERROR_MESSAGE);
+            FrmDiretorio frmDiretorio = new FrmDiretorio();
+            frmDiretorio.setVisible(true);
         }
 
     }
