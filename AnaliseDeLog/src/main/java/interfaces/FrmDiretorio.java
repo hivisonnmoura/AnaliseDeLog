@@ -97,7 +97,7 @@ public class FrmDiretorio extends JFrame {
 
             List<String> ListaArquivo = new ArrayList<>();
             String caminho = txtInserirDiretrio.getText();
-
+            setCursor(WAIT_CURSOR);
             File arquivo = new File(caminho);
             try {
                 if (arquivo.listFiles().length == 0)
@@ -116,13 +116,14 @@ public class FrmDiretorio extends JFrame {
 
                 ServicoFachada servicoFachada = new ServicoFachada();
                 servicoFachada.solicitarServicoDescompactador(caminho, ListaArquivo);
-
+                setCursor(DEFAULT_CURSOR);
                 textArea.setText(null);
                 this.dispose();
 
             } catch (NullPointerException nullPointer) {
                 String erroAoSelecionarDiretorio = "Diretório inválido";
                 JOptionPane.showMessageDialog(null, erroAoSelecionarDiretorio, "Erro ao localizar diretório", JOptionPane.ERROR_MESSAGE);
+                setCursor(DEFAULT_CURSOR);
                 btnLocalizar.doClick();
             }
         });
