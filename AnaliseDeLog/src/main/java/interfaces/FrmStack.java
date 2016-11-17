@@ -31,10 +31,8 @@ public class FrmStack extends JFrame {
         EventQueue.invokeLater(() -> {
             try {
                 FrmStack frame = new FrmStack();
-
                 frame.setVisible(true);
                 frame.setResizable(false);
-
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -48,7 +46,7 @@ public class FrmStack extends JFrame {
         GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
         int altura = gd.getDisplayMode().getHeight() - 70;
         int largura = gd.getDisplayMode().getWidth() - 70;
-        setBounds(100, 100, largura, altura);
+        setBounds(100, 100, largura + 10, altura + 10);
 
         JPanel contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -81,7 +79,6 @@ public class FrmStack extends JFrame {
 
         comboBox.setSelectedIndex(-1);
         comboBox.addActionListener(e -> {
-
             jTextArea.setEditable(false);
             String stringStack1 = String.join("\n", servicoFachada.direcionaStack((EntidadeThread) comboBox.getSelectedItem()));
             jTextArea.setText(stringStack1);
@@ -217,5 +214,35 @@ public class FrmStack extends JFrame {
         JLabel lblProcessoLwpid = new JLabel("Processo - LWPID");
         lblProcessoLwpid.setBounds((largura / 2) - 300, (int) (altura * 0.08), 170, 20);
         contentPane.add(lblProcessoLwpid);
+
+        JPanel panel_1 = new JPanel();
+        panel_1.setBorder(new TitledBorder(null, "Legenda", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+        panel_1.setBounds((int)(largura*0.92),(int)(altura*0.03) , 100, 78);
+        contentPane.add(panel_1);
+        panel_1.setLayout(null);
+
+        JLabel lblNewLabel = new JLabel("LOCKED");
+        lblNewLabel.setBackground(Color.GREEN);
+        lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 13));
+        lblNewLabel.setOpaque(true);
+        lblNewLabel.setForeground(Color.BLACK);
+        lblNewLabel.setBounds(4, 16, 80, 14);
+        panel_1.add(lblNewLabel);
+
+        JLabel lblNewLabel_1 = new JLabel("SOLUZIONA");
+        lblNewLabel_1.setBackground(Color.YELLOW);
+        lblNewLabel_1.setForeground(Color.BLACK);
+        lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 13));
+        lblNewLabel_1.setOpaque(true);
+        lblNewLabel_1.setBounds(4, 33, 80, 14);
+        panel_1.add(lblNewLabel_1);
+
+        JLabel lblNewLabel_2 = new JLabel("WAITING");
+        lblNewLabel_2.setBackground(Color.RED);
+        lblNewLabel_2.setForeground(Color.BLACK);
+        lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 13));
+        lblNewLabel_2.setOpaque(true);
+        lblNewLabel_2.setBounds(4, 50, 80, 14);
+        panel_1.add(lblNewLabel_2);
     }
 }
