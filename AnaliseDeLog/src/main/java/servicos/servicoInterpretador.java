@@ -1,5 +1,0 @@
-package servicos;
-
-class servicoInterpretador {
-
-}
