@@ -1,96 +1,95 @@
-
 package entidades;
 
 public class EntidadeProcesso {
 
-	private int pid;
-	private String username;
-	private String time;
-	private String cpu;
-	private int nlwp;
-	private String process;
-	private String hora;
-	private String diretorio;
+    private int pid;
+    private String username;
+    private String time;
+    private String cpu;
+    private int nlwp;
+    private String process;
+    private String hora;
+    private String diretorio;
 
-	public EntidadeProcesso(int pid, String username, String time, String cpu, int nlwp, String process, String hora, String diretorio) {
-		this.pid = pid;
-		this.username = username;
-		this.time = time;
-		this.cpu = cpu;
-		this.nlwp = nlwp;
-		this.process = process;
-		this.hora = hora;
-		this.diretorio = diretorio;
-	}
-	
-	public static EntidadeProcesso criarProcesso(int pid, String username, String time, String cpu, int nlwp, String process, String hora, String diretorio){
-		
-		return new EntidadeProcesso(pid,username,time,cpu,nlwp,process,hora, diretorio);
-	}
-	
+    public EntidadeProcesso(int pid, String username, String time, String cpu, int nlwp, String process, String hora, String diretorio) {
+        this.pid = pid;
+        this.username = username;
+        this.time = time;
+        this.cpu = cpu;
+        this.nlwp = nlwp;
+        this.process = process;
+        this.hora = hora;
+        this.diretorio = diretorio;
+    }
 
-	public int getPid() {
-		return pid;
-	}
+    public static EntidadeProcesso criarProcesso(int pid, String username, String time, String cpu, int nlwp, String process, String hora, String diretorio) {
 
-	public void setPid(int pid) {
-		this.pid = pid;
-	}
+        return new EntidadeProcesso(pid, username, time, cpu, nlwp, process, hora, diretorio);
+    }
 
-	public String getDiretorio() {
-		return diretorio;
-	}
 
-	public void setDiretorio(String diretorio) {
-		this.diretorio = diretorio;
-	}
+    public int getPid() {
+        return pid;
+    }
 
-	public String getUsername() {
-		return username;
-	}
+    public void setPid(int pid) {
+        this.pid = pid;
+    }
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    public String getDiretorio() {
+        return diretorio;
+    }
 
-	public String getTime() {
-		return time;
-	}
+    public void setDiretorio(String diretorio) {
+        this.diretorio = diretorio;
+    }
 
-	public void setTime(String time) {
-		this.time = time;
-	}
+    public String getUsername() {
+        return username;
+    }
 
-	public String getCpu() {
-		return cpu;
-	}
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
-	public void setCpu(String cpu) {
-		this.cpu = cpu;
-	}
+    public String getTime() {
+        return time;
+    }
 
-	public int getNlwp() {
-		return nlwp;
-	}
+    public void setTime(String time) {
+        this.time = time;
+    }
 
-	public void setNlwp(int nlwp) {
-		this.nlwp = nlwp;
-	}
+    public String getCpu() {
+        return cpu;
+    }
 
-	public String getProcess() {
-		return process;
-	}
+    public void setCpu(String cpu) {
+        this.cpu = cpu;
+    }
 
-	public void setProcess(String process) {
-		this.process = process;
-	}
+    public int getNlwp() {
+        return nlwp;
+    }
 
-	public String getHora() {
-		return hora;
-	}
+    public void setNlwp(int nlwp) {
+        this.nlwp = nlwp;
+    }
 
-	public void setHora(String hora) {
-		this.hora = hora;
-	}
+    public String getProcess() {
+        return process;
+    }
+
+    public void setProcess(String process) {
+        this.process = process;
+    }
+
+    public String getHora() {
+        return hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
 
 }

@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AnaliseDeLog.iml" filepath="$PROJECT_DIR$/AnaliseDeLog.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AnaliseDeLog/Indra.iml" filepath="$PROJECT_DIR$/AnaliseDeLog/Indra.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AnaliseDeLog/src/main/main.iml" filepath="$PROJECT_DIR$/AnaliseDeLog/src/main/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AnaliseDeLog/src/test/test.iml" filepath="$PROJECT_DIR$/AnaliseDeLog/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnaliseDeLog/Logz.iml" filepath="$PROJECT_DIR$/AnaliseDeLog/Logz.iml" />
     </modules>
   </component>
 </project>

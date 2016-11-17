@@ -1,41 +1,39 @@
 package repositorios;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import entidades.EntidadeThread;
+
+import java.util.ArrayList;
 
 public class RepositorioThread implements RepositorioGenerico<EntidadeThread> {
 
-	
-	static ArrayList<EntidadeThread> threads = new ArrayList<EntidadeThread>();
-   
 
-	public ArrayList<EntidadeThread> select(EntidadeThread thread) {
-		return select(thread);
-	}
-	
-	public void insert(EntidadeThread thread) {
-		threads.add(thread);
-		
-	}
+    private static ArrayList<EntidadeThread> threads = new ArrayList<>();
 
-	public ArrayList<EntidadeThread> delete() {
-		return null;
-	}
 
-	public ArrayList<EntidadeThread> findall() {
-		
-		return threads;
-	}
+    public ArrayList<EntidadeThread> select(EntidadeThread thread) {
+        return select(thread);
+    }
 
-	public EntidadeThread find(EntidadeThread thread) {
+    public void insert(EntidadeThread thread) {
+        threads.add(thread);
 
-		return null;
-	}
-	public void testaLista(){
-		threads.forEach(System.out::println);
-		System.out.println("testaLista");
-		
-	}
+    }
+
+
+    public ArrayList<EntidadeThread> delete() {
+        threads.clear();
+        return null;
+    }
+
+    public ArrayList<EntidadeThread> findall() {
+
+        return threads;
+    }
+
+    public EntidadeThread find(EntidadeThread thread) {
+
+        return null;
+    }
+
+
 }

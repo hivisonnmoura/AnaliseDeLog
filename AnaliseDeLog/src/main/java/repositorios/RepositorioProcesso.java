@@ -1,41 +1,43 @@
 package repositorios;
 
-import java.util.ArrayList;
 import entidades.EntidadeProcesso;
 
+import java.util.ArrayList;
+
 public class RepositorioProcesso implements RepositorioGenerico<EntidadeProcesso> {
-	static ArrayList<EntidadeProcesso> processos = new ArrayList<EntidadeProcesso>();
+    private static ArrayList<EntidadeProcesso> processos = new ArrayList<>();
 
-	public ArrayList<EntidadeProcesso> select(EntidadeProcesso processo) {
-		return select(processo);
-	}
+    public ArrayList<EntidadeProcesso> select(EntidadeProcesso processo) {
+        return select(processo);
+    }
 
-	public EntidadeProcesso selectByHora(String hora) {
-		for (EntidadeProcesso itemProcesso : processos) {
-			if (hora.equals(itemProcesso.getHora())) {
-				return itemProcesso;
-			}
-		}
-		return null;
-	}
+    public EntidadeProcesso selectByHora(String hora) {
+        for (EntidadeProcesso itemProcesso : processos) {
+            if (hora.equals(itemProcesso.getHora())) {
+                return itemProcesso;
+            }
+        }
+        return null;
+    }
 
-	public void insert(EntidadeProcesso processo) {
-		this.processos.add(processo);
+    public void insert(EntidadeProcesso processo) {
+        processos.add(processo);
 
-	}
+    }
 
-	public ArrayList<EntidadeProcesso> delete() {
-		return null;
-	}
+    public ArrayList<EntidadeProcesso> delete() {
+        processos.clear();
+        return null;
+    }
 
-	public ArrayList<EntidadeProcesso> findall() {
+    public ArrayList<EntidadeProcesso> findall() {
 
-		return this.processos;
-	}
+        return processos;
+    }
 
-	public EntidadeProcesso find(EntidadeProcesso processo) {
+    public EntidadeProcesso find(EntidadeProcesso processo) {
 
-		return null;
-	}
+        return null;
+    }
 
 }
