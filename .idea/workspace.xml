@@ -3,12 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="35b727fa-0ac1-47c4-9ecb-9ac9d88d72e3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmDiretorio.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmDiretorio.class" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack$1.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack$2.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/servicos/ServicoFachada.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/servicos/ServicoFachada.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java" afterPath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack$2.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java" afterPath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
     </list>
     <ignored path="AnaliseDeLog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,11 +57,18 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="FrmStack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="278">
               <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+=======
+      <file leaf-file-name="FrmStack.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,6 +88,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FrmDiretorio.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="125" column="40" selection-start-line="125" selection-start-column="40" selection-end-line="125" selection-end-column="40" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="DadoTableModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/DadoTableModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
+      <file leaf-file-name="ServicoDescompactador.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoDescompactador.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+              <folding />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="FrmDiretorio.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,30 +131,55 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServicoDescompactador.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoDescompactador.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+=======
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
               <folding />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="ServicoDescompactador.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoDescompactador.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+=======
+      <file leaf-file-name="ServicoProcesso.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoProcesso.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+=======
+      <file leaf-file-name="ServicoFachada.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoFachada.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="ServicoProcesso.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoProcesso.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -126,6 +200,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
       <file leaf-file-name="ServicoThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoThread.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -195,10 +271,17 @@
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaStacksUtil.java" />
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoDescompactador.java" />
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmNodos.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java" />
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoFachada.java" />
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java" />
+=======
+        <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoFachada.java" />
+        <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java" />
+        <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
       </list>
     </option>
   </component>
@@ -215,6 +298,7 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
+<<<<<<< HEAD
     <treeState>
       <PATH>
         <PATH_ELEMENT>
@@ -241,6 +325,9 @@
         </PATH_ELEMENT>
       </PATH>
     </treeState>
+=======
+    <treeState />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -437,6 +524,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+<<<<<<< HEAD
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -446,6 +534,17 @@
       <recent name="" />
     </key>
   </component>
+=======
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="FrmDiretorio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -948,7 +1047,32 @@
       <option name="project" value="LOCAL" />
       <updated>1479380150751</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="16" />
+=======
+    <task id="LOCAL-00016" summary="Correcao erro telas">
+      <created>1479380918728</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1479380918728</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Correcao erro telas">
+      <created>1479383723587</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1479383723587</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Adicao do sublinhado nas linhas com o waiting on, e adicao do &quot;pensando do mouse&quot;">
+      <created>1479385883999</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1479385883999</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -961,7 +1085,11 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1009,7 +1137,12 @@
     <MESSAGE value="Versão final" />
     <MESSAGE value="Correcao dos erros nas telas, remocao de classes e metodos inuteis e otimizacao do codigo" />
     <MESSAGE value="Correcao erro telas" />
+<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="Correcao erro telas" />
+=======
+    <MESSAGE value="Adicao do sublinhado nas linhas com o waiting on, e adicao do &quot;pensando do mouse&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicao do sublinhado nas linhas com o waiting on, e adicao do &quot;pensando do mouse&quot;" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1023,6 +1156,34 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/objetodevalor/OVNoProcesso.java">
+<<<<<<< HEAD
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/pom.xml.orig" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/javax/swing/JComboBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="598" column="18" selection-start-line="598" selection-start-column="18" selection-end-line="598" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/util/function/BiConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+=======
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -1101,10 +1262,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1702">
           <caret line="633" column="23" selection-start-line="633" selection-start-column="23" selection-end-line="633" selection-end-column="23" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/awt/Cursor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/awt/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="1095" column="16" selection-start-line="1095" selection-start-column="16" selection-end-line="1095" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/fabricas/FabricaDado.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/javax/swing/JLabel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/javax/swing/DefaultComboBoxModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/entidades/EntidadeProcesso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/entidades/EntidadeThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/agregadores/AgregadorProcessoThread.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/javax/swing/JOptionPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1702">
+          <caret line="633" column="23" selection-start-line="633" selection-start-column="23" selection-end-line="633" selection-end-column="23" />
+=======
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/Console.java" />
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoDeTesteDeTela.java" />
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/test/java/MainTest.java" />
@@ -1124,34 +1336,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/Console.java" />
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoDeTesteDeTela.java" />
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/test/java/MainTest.java" />
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoStack.java" />
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/repositorios/RepositorioStackk.java" />
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/fabricas/FabricaStack.java" />
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/entidades/EntidadeStack.java" />
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/TesteChooserr.java" />
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/entidades/EntidadeNo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/fabricas/FabricaNo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+=======
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/fabricas/FabricaProcesso.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/fabricas/FabricaProcesso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+=======
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/fabricas/FabricaThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/fabricas/FabricaThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+=======
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/CustomOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/CustomOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+=======
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/objetodevalor/OVNoProcesso.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1223,10 +1478,109 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/objetodevalor/OVNoProcesso.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="170">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+=======
+        <state relative-caret-position="405">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/repositorios/RepositorioGenerico.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/repositorios/RepositorioNo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/repositorios/RepositorioProcesso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/repositorios/RepositorioThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/servicoInterpretador.java" />
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaCpuProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaDadosCPU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaDadosCpuDetalhado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaDadosDoNo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+=======
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoNo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaStacksUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1264,6 +1618,19 @@
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
+=======
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoProcesso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
@@ -1287,16 +1654,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+=======
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1331,6 +1694,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="125" column="40" selection-start-line="125" selection-start-column="40" selection-end-line="125" selection-end-column="40" />
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoValidadorDeNos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoDescompactador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoFachada.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 5d482f5d57dd4f9736715a2bcee8a90ab4c3cd46
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="118" column="16" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
           <folding>
@@ -1339,6 +1755,98 @@
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>AnaliseDeLog</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Indra-0.0.1-SNAPSHOT</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$/AnaliseDeLog" />
+    <option value="update" />
   </component>
   <component name="masterDetails">
     <states>
