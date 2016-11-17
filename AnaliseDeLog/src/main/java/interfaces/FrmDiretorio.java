@@ -97,6 +97,7 @@ public class FrmDiretorio extends JFrame {
 
             List<String> ListaArquivo = new ArrayList<>();
             String caminho = txtInserirDiretrio.getText();
+
             File arquivo = new File(caminho);
             try {
                 if (arquivo.listFiles().length == 0)
@@ -115,6 +116,7 @@ public class FrmDiretorio extends JFrame {
 
                 ServicoFachada servicoFachada = new ServicoFachada();
                 servicoFachada.solicitarServicoDescompactador(caminho, ListaArquivo);
+
                 textArea.setText(null);
                 this.dispose();
 
