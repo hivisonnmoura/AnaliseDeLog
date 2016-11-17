@@ -1,6 +1,7 @@
 package interfaces;
 
 import entidades.EntidadeThread;
+import objetodevalor.Regex;
 import repositorios.RepositorioThread;
 import servicos.ServicoFachada;
 
@@ -84,16 +85,13 @@ public class FrmStack extends JFrame {
             jTextArea.setText(stringStack1);
 
             if (stringStack1.contains("locked")) {
-                String regexDelimitaLinhasComWaiting = "\\-\\slocked[[\\s]*[0-9]*[a-zA-Z]*[\\_\\(\\:\\s\\<\\>\\.\\$]*]*[\\)]";
-                Pattern pattern = Pattern.compile(regexDelimitaLinhasComWaiting);
-                Matcher matcher = pattern.matcher(stringStack1);
+                Regex regexDelimitaLinhasComLocked = Regex.REGEX_DELIMITA_LINHA_LOCKED;
+                Matcher matcher = regexDelimitaLinhasComLocked.getPattern().matcher(stringStack1);
                 while (matcher.find()) {
                     int inicio = matcher.start();
                     int fim = matcher.end();
                     jTextArea.setSelectionStart(inicio);
                     jTextArea.setSelectionEnd(fim);
-
-
                     try {
                         Highlighter highlight = jTextArea.getHighlighter();
                         Highlighter.HighlightPainter painter = new DefaultHighlighter.DefaultHighlightPainter(
@@ -101,15 +99,12 @@ public class FrmStack extends JFrame {
                         highlight.addHighlight(inicio, fim, painter);
                     } catch (BadLocationException bad) {
                         bad.printStackTrace();
-
                     }
                 }
             }
-
             if (stringStack1.contains("waiting")) {
-                String regexDelimitaLinhasComWaiting = "\\-\\swaiting[[\\s]*[0-9]*[a-zA-Z]*[\\_\\(\\:\\s\\<\\>\\.\\$]*]*[\\)]";
-                Pattern pattern = Pattern.compile(regexDelimitaLinhasComWaiting);
-                Matcher matcher = pattern.matcher(stringStack1);
+               Regex regexDelimitaLinhasComWaiting = Regex.REGEX_DELIMITA_LINHA_WAITING;
+                Matcher matcher = regexDelimitaLinhasComWaiting.getPattern().matcher(stringStack1);
                 while (matcher.find()) {
                     int inicio = matcher.start();
                     int fim = matcher.end();
@@ -124,15 +119,12 @@ public class FrmStack extends JFrame {
                         highlight.addHighlight(inicio, fim, painter);
                     } catch (BadLocationException bad) {
                         bad.printStackTrace();
-
                     }
                 }
             }
-
             if (stringStack1.contains("soluziona")) {
-                String regexDelimitaLinhasComSoluzionaZeus = "\\t[\\s[0-9]*[a-zA-Z]*]*]*]*.soluziona[.[0-9]*[a-zA-Z]*[\\_\\(\\:\\s]*]*]*[\\)]";
-                Pattern pattern = Pattern.compile(regexDelimitaLinhasComSoluzionaZeus);
-                Matcher matcher = pattern.matcher(stringStack1);
+                Regex regexDelimitaLinhasComSoluziona = Regex.REGEX_DELIMITA_LINHA_SOLUZINA;
+                Matcher matcher = regexDelimitaLinhasComSoluziona.getPattern().matcher(stringStack1);
                 while (matcher.find()) {
                     int inicio = matcher.start() + 1;
                     int fim = matcher.end();

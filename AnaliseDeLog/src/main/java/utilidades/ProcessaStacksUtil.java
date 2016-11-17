@@ -1,11 +1,12 @@
 package utilidades;
 
+import objetodevalor.Regex;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -47,9 +48,8 @@ public class ProcessaStacksUtil {
 
         for (String stack : listaDeStacks) {
 
-            String regexParaDelimitarONid = "\\snid=0x[[0-9]*[a-fA-F]*]*\\s";
-            Pattern patternParaMapearNoTextONid = Pattern.compile(regexParaDelimitarONid);
-            Matcher matchVerificaSeExisteNid = patternParaMapearNoTextONid.matcher(stack);
+            Regex regexDelimitaNid = Regex.REGEX_DELIMITA_NID;
+            Matcher matchVerificaSeExisteNid = regexDelimitaNid.getPattern().matcher(stack);
 
             while (matchVerificaSeExisteNid.find()) {
 

@@ -46,13 +46,15 @@ class ServicoDescompactador {
         return temp;
     }
 
+
     private void extrairTarGz(File arquivoTarGz, File localDestino) throws IOException, ArchiveException {
         File arquivoTar = unGzip(arquivoTarGz, localDestino);
         unTar(arquivoTar, localDestino);
         if (arquivoTar.delete()) {
-            System.err.println("Descompactado:  "+arquivoTar.getName());
+            System.err.println("Descompactado: "+arquivoTar.getName());
         }
     }
+
 
     private List<File> unTar(File arquivoTar, File localDestino) throws IOException, ArchiveException {
 
@@ -103,4 +105,6 @@ class ServicoDescompactador {
 
         return outputFile;
     }
+
+
 }

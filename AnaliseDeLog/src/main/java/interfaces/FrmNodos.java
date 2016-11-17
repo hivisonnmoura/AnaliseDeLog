@@ -2,6 +2,7 @@ package interfaces;
 
 
 import objetodevalor.OVNoProcesso;
+import repositorios.RepositorioNo;
 import servicos.ServicoFachada;
 import utilidades.ProcessaDadosCpuDetalhado;
 

@@ -1,7 +1,6 @@
 package interfaces;
 
 import servicos.ServicoFachada;
-import servicos.ServicoValidadorDeNos;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -12,14 +11,15 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FrmDiretorio extends JFrame {
+public class FrmDiretorio extends JFrame  {
 
 
     private static final long serialVersionUID = 1L;
     private JTextField txtInserirDiretrio;
+    ServicoFachada servicoFachada = new ServicoFachada();
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
         EventQueue.invokeLater(() -> {
             try {
@@ -112,9 +112,6 @@ public class FrmDiretorio extends JFrame {
                     }
                 }
 
-
-
-                ServicoFachada servicoFachada = new ServicoFachada();
                 servicoFachada.solicitarServicoDescompactador(caminho, ListaArquivo);
                 setCursor(DEFAULT_CURSOR);
                 textArea.setText(null);
@@ -124,10 +121,10 @@ public class FrmDiretorio extends JFrame {
                 String erroAoSelecionarDiretorio = "Diretório inválido";
                 JOptionPane.showMessageDialog(null, erroAoSelecionarDiretorio, "Erro ao localizar diretório", JOptionPane.ERROR_MESSAGE);
                 setCursor(DEFAULT_CURSOR);
+                textArea.setText(null);
                 btnLocalizar.doClick();
             }
         });
 
     }
-
 }
