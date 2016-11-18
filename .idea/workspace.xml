@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35b727fa-0ac1-47c4-9ecb-9ac9d88d72e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoPopulaFrmStack.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoTratamentoDeExcecaoSelecionaProcesso.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmNodos$1.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmNodos$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmNodos.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmNodos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack$2.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack.class" afterPath="$PROJECT_DIR$/AnaliseDeLog/target/classes/interfaces/FrmStack.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmNodos.java" afterPath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmNodos.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java" afterPath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/objetodevalor/Regex.java" afterPath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/objetodevalor/Regex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaDadosCPU.java" afterPath="$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaDadosCPU.java" />
     </list>
     <ignored path="AnaliseDeLog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,33 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProcessaDadosCPU.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaDadosCPU.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcessaCpuProcess.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaCpuProcess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FrmNodos.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmNodos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="132" column="91" selection-start-line="132" selection-start-column="91" selection-end-line="132" selection-end-column="91" />
+            <state relative-caret-position="272">
+              <caret line="131" column="21" selection-start-line="131" selection-start-column="21" selection-end-line="131" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,12 +40,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServicoTratamentoDeExcecaoSelecionaProcesso.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ServicoTratamentoDeExcecaoSelecionaProcesso.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoTratamentoDeExcecaoSelecionaProcesso.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FabricaProcesso.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/fabricas/FabricaProcesso.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcessaDadosCpuCohere.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaDadosCpuCohere.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,7 +75,7 @@
       <file leaf-file-name="ServicoValidadorDeNos.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoValidadorDeNos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="-52">
               <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
               <folding />
             </state>
@@ -94,7 +85,7 @@
       <file leaf-file-name="FrmDiretorio.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
+            <state relative-caret-position="1665">
               <caret line="120" column="135" selection-start-line="120" selection-start-column="79" selection-end-line="120" selection-end-column="135" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -106,28 +97,31 @@
       <file leaf-file-name="Regex.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/objetodevalor/Regex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrmStack.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
               <folding>
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FrmStack.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java">
+      <file leaf-file-name="ProcessaDadosCpuDetalhado.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaDadosCpuDetalhado.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="71" column="75" selection-start-line="71" selection-start-column="75" selection-end-line="71" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2320#3247#0" expanded="true" />
-                <element signature="e#3246#3247#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -216,8 +210,8 @@
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmNodos.java" />
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoValidacaoSelecionaProcesso.java" />
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoTratamentoDeExcecaoSelecionaProcesso.java" />
-        <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java" />
         <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/objetodevalor/TelasDeExcecao.java" />
+        <option value="$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java" />
       </list>
     </option>
   </component>
@@ -494,11 +488,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AnaliseDeLog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AnaliseDeLog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entidades" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1045,7 +1065,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479436729142</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Commit da noite">
+      <created>1479440681937</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1479440681937</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1057,7 +1084,6 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="100" y="123" width="1240" height="673" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1065,8 +1091,6 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21944444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1077,8 +1101,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="100" y="123" width="1240" height="673" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1112,7 +1139,8 @@
     <MESSAGE value="Adicao de legenda na FrmStack" />
     <MESSAGE value="Criacao do Enum de Regex da aplicacao" />
     <MESSAGE value="Adicicao do modulo de leitura e tratamento dos Coherence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicicao do modulo de leitura e tratamento dos Coherence" />
+    <MESSAGE value="Commit da noite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit da noite" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1208,7 +1236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="452" column="18" selection-start-line="452" selection-start-column="18" selection-end-line="452" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1235,14 +1262,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/fabricas/FabricaProcesso.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/fabricas/FabricaThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1255,7 +1274,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1274,7 +1292,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,24 +1361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaDadosCpuDetalhado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="46" column="0" selection-start-line="15" selection-start-column="4" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaDadosCpuCohere.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoFachada.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -1380,41 +1379,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaCpuProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="300">
           <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaDadosCPU.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
+        <state relative-caret-position="330">
           <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoPopulaComboBoxThreads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoPopulaTextArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoPopulaComboBoxThreads.java" />
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoPopulaTextArea.java" />
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmDiretorio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
+        <state relative-caret-position="1665">
           <caret line="120" column="135" selection-start-line="120" selection-start-column="79" selection-end-line="120" selection-end-column="135" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1422,21 +1407,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmNodos.java">
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoVerificaTipoDaThread.java" />
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/objetodevalor/TelasDeExcecao.java" />
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoValidadorDeNos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="132" column="91" selection-start-line="132" selection-start-column="91" selection-end-line="132" selection-end-column="91" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-52">
+          <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoVerificaTipoDaThread.java">
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/fabricas/FabricaProcesso.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaDadosCpuDetalhado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/utilidades/ProcessaDadosCpuCohere.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1450,52 +1453,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="71" column="75" selection-start-line="71" selection-start-column="75" selection-end-line="71" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2320#3247#0" expanded="true" />
-            <element signature="e#3246#3247#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoValidadorDeNos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/objetodevalor/TelasDeExcecao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/objetodevalor/Regex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmNodos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="131" column="21" selection-start-line="131" selection-start-column="21" selection-end-line="131" selection-end-column="21" />
           <folding>
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/servicos/ServicoTratamentoDeExcecaoSelecionaProcesso.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnaliseDeLog/src/main/java/interfaces/FrmStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

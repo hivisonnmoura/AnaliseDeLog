@@ -33,7 +33,7 @@ public class FrmStack extends JFrame {
             try {
                 FrmStack frame = new FrmStack();
                 frame.setVisible(true);
-               // frame.setResizable(false);
+                frame.setResizable(false);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -71,9 +71,9 @@ public class FrmStack extends JFrame {
                 if (value instanceof EntidadeThread) {
                     EntidadeThread entidadeThread = (EntidadeThread) value;
                     String tipoDaThread = "Detalhada";
-                    if(entidadeThread.getCaminho().contains("Cohere")){
-                        tipoDaThread = "Coherence";
-                    }
+                    if(entidadeThread.getCaminho().contains("Cohere"))
+                            tipoDaThread = "Coherence";
+
                     setText(tipoDaThread+" - " +entidadeThread.getCpu() + " - " + entidadeThread.getLwpid());
                 }
                 return this;
