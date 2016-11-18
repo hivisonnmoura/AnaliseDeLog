@@ -38,7 +38,6 @@ class ProcessaDadosCPU {
             if (!listaProcesso.contains(processo)) {
                 listaProcesso.add(processo);
                 servicoNo.solicitarCriacaoNo(nomeNo, dataNo, listaProcesso);
-               ;
             }
 
         }

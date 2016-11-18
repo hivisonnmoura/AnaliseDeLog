@@ -4,6 +4,7 @@ import entidades.EntidadeThread;
 import objetodevalor.Regex;
 import repositorios.RepositorioThread;
 import servicos.ServicoFachada;
+import servicos.ServicoPopulaFrmStack;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -32,7 +33,7 @@ public class FrmStack extends JFrame {
             try {
                 FrmStack frame = new FrmStack();
                 frame.setVisible(true);
-                frame.setResizable(false);
+               // frame.setResizable(false);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -40,7 +41,6 @@ public class FrmStack extends JFrame {
     }
 
     public FrmStack() {
-        jTextArea.setEditable(false);
         setTitle("Logz - An\u00E1lise de stacks");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
@@ -72,7 +72,7 @@ public class FrmStack extends JFrame {
                     EntidadeThread entidadeThread = (EntidadeThread) value;
                     String tipoDaThread = "Detalhada";
                     if(entidadeThread.getCaminho().contains("Cohere")){
-                            tipoDaThread = "Coherence";
+                        tipoDaThread = "Coherence";
                     }
                     setText(tipoDaThread+" - " +entidadeThread.getCpu() + " - " + entidadeThread.getLwpid());
                 }
@@ -83,77 +83,16 @@ public class FrmStack extends JFrame {
 
         comboBox.setSelectedIndex(-1);
         comboBox.addActionListener(e -> {
-
-            String stringStack1 = String.join("\n", servicoFachada.direcionaStack((EntidadeThread) comboBox.getSelectedItem()));
-            jTextArea.setText(stringStack1);
-
-            if (stringStack1.contains("locked")) {
-                Regex regexDelimitaLinhasComLocked = Regex.REGEX_DELIMITA_LINHA_LOCKED;
-                Matcher matcher = regexDelimitaLinhasComLocked.getPattern().matcher(stringStack1);
-                while (matcher.find()) {
-                    int inicio = matcher.start();
-                    int fim = matcher.end();
-                    jTextArea.setSelectionStart(inicio);
-                    jTextArea.setSelectionEnd(fim);
-                    try {
-                        Highlighter highlight = jTextArea.getHighlighter();
-                        Highlighter.HighlightPainter painter = new DefaultHighlighter.DefaultHighlightPainter(
-                                Color.GREEN);
-                        highlight.addHighlight(inicio, fim, painter);
-                    } catch (BadLocationException bad) {
-                        bad.printStackTrace();
-                    }
-                }
-            }
-            if (stringStack1.contains("waiting")) {
-               Regex regexDelimitaLinhasComWaiting = Regex.REGEX_DELIMITA_LINHA_WAITING;
-                Matcher matcher = regexDelimitaLinhasComWaiting.getPattern().matcher(stringStack1);
-                while (matcher.find()) {
-                    int inicio = matcher.start();
-                    int fim = matcher.end();
-                    jTextArea.setSelectionStart(inicio);
-                    jTextArea.setSelectionEnd(fim);
-
-
-                    try {
-                        Highlighter highlight = jTextArea.getHighlighter();
-                        Highlighter.HighlightPainter painter = new DefaultHighlighter.DefaultHighlightPainter(
-                                Color.red);
-                        highlight.addHighlight(inicio, fim, painter);
-                    } catch (BadLocationException bad) {
-                        bad.printStackTrace();
-                    }
-                }
-            }
-            if (stringStack1.contains("soluziona")) {
-                Regex regexDelimitaLinhasComSoluziona = Regex.REGEX_DELIMITA_LINHA_SOLUZINA;
-                Matcher matcher = regexDelimitaLinhasComSoluziona.getPattern().matcher(stringStack1);
-                while (matcher.find()) {
-                    int inicio = matcher.start() + 1;
-                    int fim = matcher.end();
-                    jTextArea.setSelectionStart(inicio);
-                    jTextArea.setSelectionEnd(fim);
-
-
-                    try {
-                        Highlighter highlight = jTextArea.getHighlighter();
-                        Highlighter.HighlightPainter painter = new DefaultHighlighter.DefaultHighlightPainter(
-                                Color.yellow);
-                        highlight.addHighlight(inicio, fim, painter);
-                    } catch (BadLocationException bad) {
-                        bad.printStackTrace();
-
-                    }
-                }
-            }
+            ServicoPopulaFrmStack servicoPopulaFrmStack = new ServicoPopulaFrmStack();
+            servicoPopulaFrmStack.populaFrmStack(comboBox,jTextArea);
         });
         comboBox.setBounds((largura / 2) - 170, (int) (altura * 0.08), 170, 20);
         contentPane.add(comboBox);
 
         JPanel panel = new JPanel();
-        panel.setBorder(new TitledBorder(null, "Descricao da Stack da Thread escolhida", TitledBorder.LEADING,
+        panel.setBorder(new TitledBorder(null, "Descri\u00E7\u00E3o da Stack da Thread escolhida", TitledBorder.LEADING,
                 TitledBorder.TOP, null, null));
-        panel.setBounds(12, 97, (int) (largura * 0.975), (int) (altura * 0.781));
+        panel.setBounds(12, 97, 1271, 545);
 
         contentPane.add(panel);
         panel.setLayout(null);
@@ -203,13 +142,13 @@ public class FrmStack extends JFrame {
         btnNewButton_1.setBounds(((int) (largura * 0.99 - 89)), (int) (altura * 0.92), 89, 23);
         contentPane.add(btnNewButton_1);
 
-        JLabel lblProcessoLwpid = new JLabel("Processo - LWPID");
-        lblProcessoLwpid.setBounds((largura / 2) - 300, (int) (altura * 0.08), 170, 20);
+        JLabel lblProcessoLwpid = new JLabel("Tipo Thread - Processo - LWPID");
+        lblProcessoLwpid.setBounds(289, 55, 192, 20);
         contentPane.add(lblProcessoLwpid);
 
         JPanel panel_1 = new JPanel();
         panel_1.setBorder(new TitledBorder(null, "Legenda", TitledBorder.LEADING, TitledBorder.TOP, null, null));
-        panel_1.setBounds((int)(largura*0.92),(int)(altura*0.03) , 100, 78);
+        panel_1.setBounds(1194,11 , 89, 78);
         contentPane.add(panel_1);
         panel_1.setLayout(null);
 

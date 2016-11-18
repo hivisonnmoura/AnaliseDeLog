@@ -3,6 +3,7 @@ package interfaces;
 
 import objetodevalor.OVNoProcesso;
 import servicos.ServicoFachada;
+import servicos.ServicoTratamentoDeExcecaoSelecionaProcesso;
 import utilidades.ProcessaDadosCpuCohere;
 import utilidades.ProcessaDadosCpuDetalhado;
 
@@ -14,9 +15,9 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.util.Objects;
+import java.io.Serializable;
 
-public class FrmNodos extends JFrame {
+public class FrmNodos extends JFrame implements Serializable {
 
     private JTable tableNodosCriticos;
     private JTextField textField;
@@ -119,12 +120,6 @@ public class FrmNodos extends JFrame {
             try {
                 caminhoDiretorio = tableNodosCriticos.getModel().getValueAt(tableNodosCriticos.getSelectedRow(), 9)
                         .toString();
-            } catch (ArrayIndexOutOfBoundsException ex) {
-                caminhoDiretorio = "";
-            }
-            if (Objects.equals(caminhoDiretorio, "")) {
-                JOptionPane.showMessageDialog(null, "Selecione um processo!");
-            } else {
                 String caminhoCpuDetalhado = servicoFachada.direcionaCPUProcess(caminhoDiretorio);
                 ProcessaDadosCpuDetalhado.processaCpuDetalhada(caminhoCpuDetalhado);
                 String caminhoCpuCohere = servicoFachada.direcionaCpuCohere(caminhoDiretorio);
@@ -133,7 +128,11 @@ public class FrmNodos extends JFrame {
                 FrmStack frmStack = new FrmStack();
                 frmStack.setVisible(true);
                 setVisible(false);
+            } catch (ArrayIndexOutOfBoundsException ex) {
+                ServicoTratamentoDeExcecaoSelecionaProcesso servicoTratamentoDeExcecaoSelecionaProcesso = new ServicoTratamentoDeExcecaoSelecionaProcesso();
+                servicoTratamentoDeExcecaoSelecionaProcesso.tratamentoExcecaoSelecionaNo();
             }
+
         });
         btnPrximo.setBounds(500, 377, 89, 23);
         contentPane.add(btnPrximo);
