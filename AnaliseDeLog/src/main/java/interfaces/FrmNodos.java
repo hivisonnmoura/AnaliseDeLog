@@ -2,8 +2,8 @@ package interfaces;
 
 
 import objetodevalor.OVNoProcesso;
-import repositorios.RepositorioNo;
 import servicos.ServicoFachada;
+import utilidades.ProcessaDadosCpuCohere;
 import utilidades.ProcessaDadosCpuDetalhado;
 
 import javax.swing.*;
@@ -127,6 +127,9 @@ public class FrmNodos extends JFrame {
             } else {
                 String caminhoCpuDetalhado = servicoFachada.direcionaCPUProcess(caminhoDiretorio);
                 ProcessaDadosCpuDetalhado.processaCpuDetalhada(caminhoCpuDetalhado);
+                String caminhoCpuCohere = servicoFachada.direcionaCpuCohere(caminhoDiretorio);
+                ProcessaDadosCpuCohere.processaCpuCohere(caminhoCpuCohere);
+
                 FrmStack frmStack = new FrmStack();
                 frmStack.setVisible(true);
                 setVisible(false);

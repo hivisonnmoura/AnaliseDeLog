@@ -29,15 +29,16 @@ class ProcessaDadosCPU {
             }
         }
 
+
         for (String file : resposta) {
             ArrayList<EntidadeProcesso> listaProcesso = new ArrayList<>();
-
             String diretorioFinal = caminho.concat(File.separator).concat(file);
             File pastaFinal = new File(diretorioFinal);
             EntidadeProcesso processo = ProcessaCpuProcess.processaArquivoCpuProcess(pastaFinal);
             if (!listaProcesso.contains(processo)) {
                 listaProcesso.add(processo);
                 servicoNo.solicitarCriacaoNo(nomeNo, dataNo, listaProcesso);
+               ;
             }
 
         }

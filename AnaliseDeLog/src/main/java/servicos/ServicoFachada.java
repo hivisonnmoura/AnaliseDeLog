@@ -79,15 +79,34 @@ public class ServicoFachada {
 
     }
 
+    public String direcionaCpuCohere(String caminhoDiretorio){
+        return  caminhoDiretorio.replace("CPUProcess_", "CPUProcess_Cohere_");
+    }
+
+
+
+
+
     public List<EntidadeNo> retornaListaEntidadeNo() {
         ServicoNo no = new ServicoNo();
         return no.buscarTodos();
     }
 
     public List<String> direcionaStack(EntidadeThread selectedItem) {
-        String caminhoDaStack = selectedItem.getCaminho().replace("CPUProcess_Detalhado_", "ResultDumps_")
-                .replace(".txt", ".log");
-        int decimalLwpid = selectedItem.getLwpid();
+        String caminhoDaStack;
+        int decimalLwpid;
+        if(selectedItem.getCaminho().contains("CPUProcess_Detalhado_")){
+
+           caminhoDaStack = selectedItem.getCaminho().replace("CPUProcess_Detalhado_", "ResultDumps_")
+                    .replace(".txt", ".log");
+            decimalLwpid = selectedItem.getLwpid();
+
+        }else{
+            caminhoDaStack = selectedItem.getCaminho().replace("CPUProcess_Cohere_", "ResultDumps_Coherence_")
+                    .replace(".txt", ".log");
+             decimalLwpid = selectedItem.getLwpid();
+        }
+
         return ProcessaStacksUtil.processaStack(caminhoDaStack, decimalLwpid);
 
     }
@@ -95,5 +114,6 @@ public class ServicoFachada {
     public void deletaStack() {
         repositorioThread.delete();
     }
+
 
 }

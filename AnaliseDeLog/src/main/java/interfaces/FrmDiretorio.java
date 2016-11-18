@@ -86,7 +86,6 @@ public class FrmDiretorio extends JFrame  {
         textArea.setLayout(new BorderLayout());
         textArea.setEditable(false);
         PrintStream printStream = new PrintStream(new CustomOutputStream(textArea));
-        System.setOut(printStream);
         System.setErr(printStream);
         textArea.setVisible(false);
 

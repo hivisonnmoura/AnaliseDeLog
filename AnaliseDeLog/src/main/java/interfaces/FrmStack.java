@@ -23,7 +23,6 @@ import java.util.regex.Pattern;
 public class FrmStack extends JFrame {
 
     RepositorioThread repositorioThread = new RepositorioThread();
-    //String stringStack;
     private JTextArea jTextArea = new JTextArea();
     private ServicoFachada servicoFachada = new ServicoFachada();
 
@@ -71,7 +70,11 @@ public class FrmStack extends JFrame {
                 super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
                 if (value instanceof EntidadeThread) {
                     EntidadeThread entidadeThread = (EntidadeThread) value;
-                    setText(entidadeThread.getCpu() + " - " + entidadeThread.getLwpid());
+                    String tipoDaThread = "Detalhada";
+                    if(entidadeThread.getCaminho().contains("Cohere")){
+                            tipoDaThread = "Coherence";
+                    }
+                    setText(tipoDaThread+" - " +entidadeThread.getCpu() + " - " + entidadeThread.getLwpid());
                 }
                 return this;
             }
@@ -80,7 +83,7 @@ public class FrmStack extends JFrame {
 
         comboBox.setSelectedIndex(-1);
         comboBox.addActionListener(e -> {
-            jTextArea.setEditable(false);
+
             String stringStack1 = String.join("\n", servicoFachada.direcionaStack((EntidadeThread) comboBox.getSelectedItem()));
             jTextArea.setText(stringStack1);
 

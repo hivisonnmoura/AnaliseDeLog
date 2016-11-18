@@ -20,7 +20,6 @@ class ProcessaCpuProcess {
 
 
         String[] cpuProcessAtributos = caminhoDoArquivo.split("_");
-
         cpuProcessAtributos[3] = tratarHora(cpuProcessAtributos);
 
 

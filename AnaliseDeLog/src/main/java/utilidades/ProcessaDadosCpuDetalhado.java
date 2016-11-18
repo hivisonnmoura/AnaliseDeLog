@@ -30,7 +30,6 @@ public class ProcessaDadosCpuDetalhado {
         for (String cpuDetalhada : listaCpuDetalhada) {
             String[] arrayCpuDetalhada = cpuDetalhada.split("\\s+");
             String[] arrayCpuDetalhadaquebraBarra = arrayCpuDetalhada[10].split("/");
-
             String pidDetalhadaDadoString = arrayCpuDetalhada[1];
             int pidDetalhadaDadoInt = Integer.parseInt(pidDetalhadaDadoString);
             String cpuDetalhadaDado = arrayCpuDetalhada[9];
